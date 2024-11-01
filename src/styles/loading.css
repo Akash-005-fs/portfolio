@@ -1,0 +1,82 @@
+/* loading.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.337);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,144,99,1) 100%);
+     /* Dark background for contrast */
+    position: relative;
+    overflow: hidden;
+    color: white;
+    font-family: 'Poppins', sans-serif; /* Modern clean font */
+  }
+  
+  .loading-logo {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+  .loading-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #ffffff; /* Color for text */
+    animation: fadeIn 1s ease-in-out;
+
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
+  }
+  
+  .fade-out {
+    transform: scale(0); /* Shrinks the logo */
+    opacity: 0; /* Fades out the logo */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    width: 20%;
+    height: 8px;
+    background-color: rgb(255, 255, 255); /* Faint background for progress bar */
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #000000; /* Color of the progress bar */
+    transition: width 0.4s ease; /* Smooth progress animation */
+  }
+  

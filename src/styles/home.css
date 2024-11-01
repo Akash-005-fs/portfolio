@@ -1,0 +1,988 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Monoton&display=swap');
+ 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+
+.section1, .section2, .section3, .section4, .section5 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.section1 { background-color: #000000; }
+.section2 { background-color: #000000; }
+.section3 { background-color: #000000;}
+.section4 { background-color: #000000;}
+.section5 { background-color: #000000;}
+
+/* Fade-out class for JavaScript trigger */
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px); /* Move down slightly when hidden */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Fade-in class to be added when in view */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Bring back to original position */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Section content styles */
+.content {
+    
+    color: rgb(0, 0, 0);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Styling for the navigation
+.head {
+    height: 15%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.head ol {
+    margin-right: 5%;
+}
+
+.head ol li{
+    display: inline;
+font-size: 23px;
+padding: 0 17px;
+}
+
+
+
+.head .logo{
+    height: 100%;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-left: 5%;
+}
+
+.head .logo .logoin{
+    height: 100%;
+    width: 100%;
+    background-image: url(../aplogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media  only screen and (max-width:900px) {
+    
+
+.head ol{
+    display: none;
+}
+
+} */
+
+
+
+
+
+.sec1,.sec2.sec3,.sec4,.sec5 {
+    height: 100vh;
+    width: 100%;
+    background-color: #efebeb;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.intro {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+   
+    display: flex;
+   flex-direction: column;
+  
+    background-clip: content-box;
+    overflow: hidden; /* Ensure no overflow */
+  }
+  
+.intro1{
+   
+    display: flex;
+    height: 80%;
+    width: 100%;
+    
+   
+}
+
+.dream{
+    height: 100%;
+    width: 100%;
+    /* background-image: url(../dream.jpg); */
+    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(12,144,99,1) 100%);
+justify-content: end;
+align-items: flex-start;
+
+    flex-direction: column;
+}
+
+
+.menu {
+    position: absolute; /* Make the menu float over the content */
+    top: 0; /* Align to the top of the page */
+    right: 0; /* Align to the right of the page */
+    background-color: transparent; /* Keep it transparent or set a background if needed */
+    padding: 1rem; /* Add some space around the menu */
+    z-index: 1000; /* Make sure the menu stays on top of other content */
+  }
+  
+
+.menu:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.149);    
+    height: 40px;
+    width: 40px;
+    border-bottom-left-radius: 40px
+
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 40px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings:
+    'opsz' 48,
+    'wght' 400,
+    'FILL' 0,
+    'GRAD' 0;
+}
+
+
+
+
+
+.menuclose {
+    position: absolute; /* Make the menu float over the content */
+    top: 0; /* Align to the top of the page */
+    right: 0; /* Align to the right of the page */
+    background-color: transparent; /* Keep it transparent or set a background if needed */
+    padding: 1rem; /* Add some space around the menu */
+    z-index: 1000; /* Make sure the menu stays on top of other content */
+  }
+
+
+
+
+  
+/* Fullscreen menu container */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Menu links styling */
+  .menu-links {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-links li {
+    font-size: 2rem;
+    color: white;
+    margin: 1.5rem 0;
+    cursor: pointer;
+  }
+  
+  .menu-links li:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social media icons */
+  .social-icons {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+
+
+
+.t1{
+
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: aliceblue;
+    margin-left: 5%;
+    transition: 0.8s;
+}
+
+
+
+
+
+.intro2{
+  
+    display: flex;
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-image: url(../line2.png);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+
+.t2{
+    transition: 0.8s;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+margin-left: 5%;
+font-size: 70px
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Manrope:wght@200..800&family=Monoton&display=swap');
+
+
+
+.animy {
+    height: 100px;
+    width: 300px;
+    background-color: rgba(188, 76, 76, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Monoton', cursive; /* Optional: apply Google font */
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    position: relative; /* Needed for absolute positioning of child elements */
+    overflow: hidden; /* Ensures text stays within the box */
+}
+
+.text-animation span {
+    position: absolute;
+    opacity: 0;
+    animation: fadeText 8s infinite;
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust position to be fully centered */
+}
+
+/* Different timings for each text */
+.text-animation span:nth-child(1) {
+    animation-delay: 0s;
+}
+.text-animation span:nth-child(2) {
+    animation-delay: 2s;
+}
+.text-animation span:nth-child(3) {
+    animation-delay: 4s;
+}
+.text-animation span:nth-child(4) {
+    animation-delay: 6s;
+}
+
+@keyframes fadeText {
+    0% { opacity: 0; }
+    12.5% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+
+
+@media only  screen and (max-width:800px) {
+    
+
+.intro2{
+   flex-direction: column;
+   justify-content: flex-start;
+   transition: 0.8s;
+}
+
+
+.t1{
+    font-size: 60px;
+}
+
+.t2{
+    font-size: 47px;
+    transition: 0.8s;
+    
+}
+
+.animy{
+width: 240px;
+height: 50px;
+font-size: 20px;
+background-color: rgba(255, 234, 0, 0);
+margin-left: -45%;
+transition: 0.8s;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.sec2{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+/* Container styling */
+.sec2cont {
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(12,144,99,1) 100%);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 3% 8%; /* Padding for desktop */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+
+/* Title styling */
+.t3, .t4 {
+    
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #66ff00;
+    font-size: 2.5rem;
+    font-size: 70px;
+    margin-bottom: 1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* Paragraph styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Major+Mono+Display&family=Manrope:wght@200..800&family=Monoton&family=Noto+Color+Emoji&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+.p-content {
+    
+    animation: slideIn 2s ease-in-out;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #fffdfd;
+    max-width: 800px; /* Limits width for better readability */
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: justify; /* Justified alignment for clean appearance */
+}
+
+
+
+
+
+
+/* Responsive Design */
+/* For large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .sec2cont {
+        padding: 4% 10%; /* Increase padding for large screens */
+    }
+
+    .t3, .t4 {
+        font-size: 3rem; /* Larger titles for big screens */
+    }
+
+    .p-content {
+        font-size: 1.2rem; /* Slightly larger text for better readability */
+    }
+}
+
+/* For tablets and medium screens (768px to 1199px) */
+@media  only screen and  (min-width: 768px)  and    (max-width: 1199px) {
+    .sec2cont {
+        padding: 4% 6%; /* Slightly reduced padding for tablets */
+    }
+
+    .t3, .t4 {
+        font-size: 2.2rem; /* Adjust title size */
+    }
+
+    .p-content {
+        font-size: 1.4rem;
+        max-width: 90%; /* Stretch paragraphs a bit more */
+    }
+}
+
+/* For mobile devices (up to 767px) */
+@media (min-width:481px) and (max-width: 767px) {
+    .sec2cont {
+        padding: 8% 5%; /* Smaller padding for mobile */
+    }
+
+    .t3, .t4 {
+        font-size: 1.8rem; /* Smaller titles for mobile */
+    }
+
+    .p-content {
+        font-size: 1rem;
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+/* For very small screens (up to 480px) */
+@media (max-width: 480px) {
+    .sec2cont {
+        padding: 11% 7%; /* Further reduction in padding */
+    }
+
+    .t3, .t4 {
+        font-size: 1.6rem; /* Further reduce title size */
+    }
+
+    .p-content {
+        letter-spacing: 0px;
+        font-size: 1.2rem; /* Slightly smaller paragraph text */
+    }
+}
+
+
+
+@media (max-width: 400px) {
+   
+
+    .p-content {
+        letter-spacing: 0px;
+        font-size: 0.8rem; /* Slightly smaller paragraph text */
+    }
+}
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Keyframe for fading in (paragraphs) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+
+.sec3{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,144,99,1) 100%);
+    height: 100%;
+    width: 100%; 
+    flex-direction: column;
+    
+    display: flex
+
+
+
+}
+
+
+
+.sec3top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+ 
+    
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.sec3topin{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+
+
+
+
+
+
+.sec3bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    
+    background-size: cover;
+    background-position: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.t7{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5%;
+    font-size: 30px;
+    height: 50%;
+    width: 100%;
+    color: #ffffff;
+}
+
+
+
+.skillscont{
+    width: 100%;
+    height:50%;
+    background-color: rgba(29, 170, 123, 0);
+}
+
+
+
+
+
+.sec3bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+ 
+    background-color: rgba(0, 0, 0, 0)
+}
+
+
+
+.sec3bottomin{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+.toolscont{
+    width: 100%;
+    height:50%;
+    background-color: rgba(22, 184, 127, 0);
+}
+
+
+
+
+
+.t8{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5%;
+    font-size: 30px;
+    color: white;
+    height: 50%;
+    width: 100%;
+}
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    
+.t7,.t8{
+    font-size: 22px;
+}
+
+}
+
+
+.sec4{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(12,144,99,1) 100%);
+   
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.sec5{
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.lastv {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    z-index: 1;
+  background-color: #00000000;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+
+
+
+.lastvin {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #96222200; /* Red background for visibility */
+   
+}
+
+#lv {
+    height: 100%;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#autoplayVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.lastone{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 70%;
+    z-index: 0;
+}
+
+
+.logo{
+    height: 100px;
+    width: 150px;
+    background-color: #1e1717;
+    margin-left: 5%
+}
+
+.logoin{
+    height: 100%;
+    width: 100%;
+    background-image: url(../aplogo.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
+.t9{
+margin-top: 5%;
+margin-left: 5%;
+font-family: "Figtree", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+
+}
+
+
+.t10{
+    margin-left: 5%;
+    font-family: "Figtree", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+
+
+#t10{
+    font-family: "Figtree", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+
+.t11{
+    margin-left: 5%;
+    font-family: "Figtree", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+}
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* Your other CSS styles */
+.social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    gap: 40px; /* Adds spacing between icons */
+}
+
+.social a {
+    color: #000; /* Default color for the icons */
+    font-size: 2rem; /* Size of the icons */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social a:hover {
+    color: #01995fc6; /* Color change on hover */
+}
+
+
+.downmenu{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 97%;
+    height: 30%;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(12,144,99,1) 100%);
+    
+}
+
+
+
+
+.vvvv{
+    color: #efebeb;
+    display: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+
+.downmenu a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.downmenu ol li {
+    
+    display: inline;
+    color: #ffffff;
+    padding: 0 40px;
+    font-size: 30px;
+    cursor: pointer; /* Make it look clickable */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.downmenu ol li:hover {
+    color: #ffffff; /* Change text color on hover */
+    background-color: rgb(0, 0, 0);
+    padding: 10px 40px;
+    border-radius: 17px;
+}
+
+.downmenu .material-symbols-outlined {
+    vertical-align: middle; /* Align the icon vertically in the middle */
+    font-size: 30px; /* Match the icon size with the text */
+    line-height: 1; /* Ensure the line height doesn't interfere */
+    margin-left: 10px; /* Add space between text and arrow */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.downmenu ol li:hover .material-symbols-outlined {
+    transform: translateX(5px); /* Slide the arrow to the right on hover */
+}
+
+
+@media only   screen and (max-width:700px){
+    .downmenu ol li{
+        display: block;
+        padding: 15px 20px;
+        font-size: 17px;
+        transition: 0.8s;
+    }
+
+    .downmenu ol li:hover{
+        padding: 15px 20px;
+    }
+
+
+.vvvv{
+    display: block;
+    position: absolute;
+    margin-left: 70%;
+    height: 40px;
+    width: 40px;
+}
+
+
+}
+
+
+
+
+
+
+
+@media only   screen and (max-width:400px){
+    #t10{
+
+        font-size:25px ;
+    }
+}
